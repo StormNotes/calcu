@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.introduction{
+    color:white;
+    font-size: 2.456em;
+}
+
+.calc-body{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    height:400px;
+    width: 800px;
+    background: darkgray;
+}
+
+.calc-body .operators button{
+    height:50px;
+    width: 80px;
+}
+.calc-body button{
+    height: 200px;
+    width: 200px;
+}
+.op-btn:hover{
+    z-index: 5;
+    margin-bottom: -20px;
+}
+
