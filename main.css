@@ -3,10 +3,36 @@
     padding: 0;
 
 }
+
+body{
+    background: #3e425f;
+}
+
+body button{
+    
+}
 .introduction{
     color:white;
     font-size: 2.456em;
 }
+#display{
+    display: flex;
+    background: rgba(0, 0, 0, 0.253);;
+    margin: 0 auto;
+    height: 50px;
+    width: 640px;
+    border-radius: 200px 0px 0px 200px;
+    -moz-border-radius: 200px 0px 0px 200px;
+    -webkit-border-radius: 200px 0px 0px 200px;
+    border: 0px solid #000000;
+}
+#display p{
+    color:white;
+    position: relative;
+    margin: 12px;
+    margin-left: 35px;
+}
+
 
 .calc-body{
     display: flex;
@@ -14,17 +40,38 @@
     padding: 20px;
     height:400px;
     width: 800px;
-    background: darkgray;
 }
 
 .calc-body .operators button{
     height:50px;
     width: 80px;
+    border-radius: 0%;
 }
-.calc-body button{
-    height: 200px;
+.calc-body .numbers button{
+    border-radius: 0%;
+    border: white solid 0px;;
+    height: 90px;
     width: 200px;
 }
+
+.calc-body .numbers button:nth-child(1){
+    border-radius: 22px 0px 0px 0px;
+-moz-border-radius: 22px 0px 0px 0px;
+-webkit-border-radius: 22px 0px 0px 0px;
+border: 0px solid #000000;
+}
+.calc-body .numbers button:nth-child(12){
+    border-radius: 0px 0px 34px 0px;
+-moz-border-radius: 0px 0px 34px 0px;
+-webkit-border-radius: 0px 0px 34px 0px;
+border: 0px solid #000000;
+}
+
+/* border-radius: 64px 0px 0px 0px;
+-moz-border-radius: 64px 0px 0px 0px;
+-webkit-border-radius: 64px 0px 0px 0px;
+border: 0px solid #000000; */
+
 .op-btn:hover{
     z-index: 5;
     margin-bottom: -20px;
