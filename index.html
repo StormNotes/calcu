@@ -13,37 +13,40 @@
 </head>
 <body>
     
-    <header style="    margin-top: 0px;" class="card-panel teal lighten-2">
+    <header style="margin-top: 0px;" class="card-panel teal lighten-2">
         <h1  class=" introduction">
            <strong>Welcome</strong>  to my calculator !
         </h1>
     </header>
 
     <div id="display">
-        <div class="passed"></div>
-        <div class="current"></div>
-
+        <div class="operands">
+            <div data-previous-operand class="passed">1 +</div> 
+            <div data-current-operand class="current">2 </div>
+        </div>
     </div>
     <div class="calc-body">
         <div class="operators">
-            <button onclick="document.querySelectorId('display').document.write = value;" class="waves-effect waves-light btn op-btn" value="add" >+</button>
-            <button onclick="document.querySelectorId('display').document.write = value;" class="waves-effect waves-light btn op-btn" value="reduce">-</button>
-            <button onclick="document.querySelectorId('display').document.write = value;" class="waves-effect waves-light btn op-btn" value="divide">/</button>
-            <button onclick="document.querySelectorId('display').document.write = value;" class="waves-effect waves-light btn op-btn" value="multiply">*</button>
+            <button data-operator onclick="console.log(value)" class="waves-effect waves-light btn op-btn" value="reduce">-</button>
+            <button data-operator onclick="console.log(value)" class="waves-effect waves-light btn op-btn" value="add" >+</button>
+            <button data-operator onclick="console.log(value)" class="waves-effect waves-light btn op-btn" value="divide">/</button>
+            <button data-operator onclick="console.log(value)" class="waves-effect waves-light btn op-btn" value="multiply">*</button>
+            <button data-equals onclick="console.log(value)" class="waves-effect waves-light btn op-btn" value="equal">=</button>
+            <button data-delete onclick="console.log(value)" class="waves-effect deep-orange lighten-2 btn op-btn" value="delete">DEL</button>
         </div>
         <div class="numbers">
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="7">7</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="8">8</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="9">9</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="4">4</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="5">5</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="6">6</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="1">1</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="2">2</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="3">3</button>            
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="0">0</button>
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="decimal">.</button>            
-            <button onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="Clear">CLEAR</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="7">7</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="8">8</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="9">9</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="4">4</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="5">5</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="6">6</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="1">1</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="2">2</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="3">3</button>            
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="0">0</button>
+            <button data-number onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="decimal">.</button>            
+            <button data-clear onclick="console.log(value)" class="waves-effect indigo accent-1 btn" value="Clear">CLEAR</button>
         </div>
         
     </div>
