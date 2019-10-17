@@ -13,6 +13,9 @@ class Calculator {
         console.log('operand is null')
         this.currentOperand = '';
         console.log('operand is null')
+        if(this.previousOperand === ''){
+            this.previousOperand = 0;
+        }
 
     }
 
@@ -74,6 +77,7 @@ class Calculator {
         if(this.operation != null){
             this.previousOperandTextElement.innerText = ` ${this.previousOperand}  ${this.operation} `;
         }        
+       
     }
 }
 
