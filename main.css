@@ -35,8 +35,12 @@ body{
 }
 #display div{
     color:white;
-    margin: 8px;
-    margin-left: 320px;
+    padding:10px ;
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+.operators{
+    margin-left: 0px;
 }
 
 
