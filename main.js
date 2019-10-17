@@ -7,9 +7,13 @@ class Calculator {
   
 
     clear(){
-        this.currentOperand = ''
-        this.previousOperand = ''
         this.operation = undefined;
+        console.log('operation is undefined')
+        this.previousOperand = '';
+        console.log('operand is null')
+        this.currentOperand = '';
+        console.log('operand is null')
+
     }
 
     delete(){
@@ -25,6 +29,7 @@ class Calculator {
         if(this.currentOperand === '') return;
         if(this.previousOperand !== ''){
             this.compute()
+            this.previousOperand = '';
         }
         this.operation = operation;
         this.previousOperand = this.currentOperand;
@@ -32,36 +37,43 @@ class Calculator {
     }
 
     compute(){
+
         let computation;
         const prev = parseFloat(this.previousOperand)
         const current = parseFloat(this.currentOperand)
         if(isNaN(prev)|| isNaN(current)) return;
         switch(this.operation){
             case '+' : computation = prev + current
+            console.log(this.computation)
             break;
 
             case '-' : computation = prev - current
+            console.log(this.computation)
             break;
 
             case '/' : computation = prev / current
+            console.log(this.computation)
             break;
 
             case '*' : computation = prev * current
+            console.log(this.computation)
             break;
 
             default: return;
         }
         this.currentOperand = computation;
-        this.operation = undefined
-        this.previousOperand = '';
+        console.log(this.currentOperand);
+        this.operation = null;
+        this.previousOperand = "";
+    
      
     }
 
     updateDisplay(){
         this.currentOperandTextElement.innerText = this.currentOperand;
         if(this.operation != null){
-            this.previousOperandTextElement.innerText = `${this.previousOperand} ${this.operation}`;
-        }
+            this.previousOperandTextElement.innerText = ` ${this.previousOperand}  ${this.operation} `;
+        }        
     }
 }
 
@@ -81,8 +93,6 @@ numberButtons.forEach(button => {
     calculator.updateDisplay()
   })
 })
-
-
 
 operatorsButtons.forEach(button => {
     button.addEventListener('click', () => {

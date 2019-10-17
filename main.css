@@ -9,9 +9,19 @@ body{
 }
 
 .introduction{
+    text-align: center;
     color:white;
-    font-size: 2.456em;
+    font-size: 1.87em;
+    margin: 0;
+} 
+
+.operands{
+    font-size: 1.27em;
+
 }
+
+
+
 #display{
     display: flex;
     background: rgba(0, 0, 0, 0.253);;
@@ -25,8 +35,8 @@ body{
 }
 #display div{
     color:white;
-    margin: 12px;
-    margin-left: 30px;
+    margin: 8px;
+    margin-left: 320px;
 }
 
 
@@ -50,12 +60,12 @@ body{
     width: 200px;
 }
 
-.calc-body .numbers button:nth-child(1){
+/* .calc-body .numbers button:nth-child(1){
     border-radius: 22px 0px 0px 0px;
 -moz-border-radius: 22px 0px 0px 0px;
 -webkit-border-radius: 22px 0px 0px 0px;
 border: 0px solid #000000;
-}
+} */
 .calc-body .numbers button:nth-child(12){
     border-radius: 0px 0px 34px 0px;
 -moz-border-radius: 0px 0px 34px 0px;
