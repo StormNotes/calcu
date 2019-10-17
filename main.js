@@ -7,7 +7,7 @@ class Calculator {
   
 
     clear(){
-        this.operation = undefined;
+        this.operation = '';
         console.log('operation is undefined')
         this.previousOperand = '';
         console.log('operand is null')
