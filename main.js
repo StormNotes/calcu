@@ -81,6 +81,8 @@ class Calculator {
     }
 }
 
+
+//variables usadas para retirar data del dom
 const numberButtons = document.querySelectorAll('[data-number]');
 const operatorsButtons = document.querySelectorAll('[data-operator]');
 const equalButton = document.querySelector('[data-equals]');
