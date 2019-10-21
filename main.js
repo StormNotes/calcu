@@ -68,6 +68,14 @@ class Calculator {
         console.log(this.currentOperand);
         this.operation = null;
         this.previousOperand = "";
+
+        if(computation === 420){
+           alert('ay lmao thats lit');
+        }
+        if(computation === 69){
+            this.compute();
+            alert(';)')
+        }
     
      
     }
